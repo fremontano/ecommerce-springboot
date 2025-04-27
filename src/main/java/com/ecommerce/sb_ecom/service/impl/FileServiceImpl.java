@@ -23,7 +23,7 @@ public class FileServiceImpl implements FileService {
         //image.jpg -> 1234 -> 1234.jpg
         String fileName = randomId.concat(originalFileName.substring(originalFileName.lastIndexOf(".")));
         // Construir la ruta del archivo
-        String filePath = paht + File.separator + fileName;
+        String filePath = paht + File.pathSeparator + fileName;
 
         // Verificar si la ruta existe, si no, crearla
         File folder = new File(paht);
@@ -34,5 +34,4 @@ public class FileServiceImpl implements FileService {
         Files.copy(file.getInputStream(), Paths.get(filePath));
         return filePath;
     }
-
 }

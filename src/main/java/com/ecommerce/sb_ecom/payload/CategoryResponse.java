@@ -19,7 +19,7 @@ public class CategoryResponse {
     /**
      * Lista de categorías que se enviara como respuesta en la API.
      * En lugar de devolver directamente una lista de entidades Category, se usa una lista de DTOs (CategoryDTO).
-     * Esto ayuda a mantener una separación entre la capa de datos y la capa de presentación.
+     * Esto ayuda a mantener una separacion entre la capa de datos y la capa de presentacion.
      */
     private List<CategoryDTO> content;
     private Integer pageNumber;
